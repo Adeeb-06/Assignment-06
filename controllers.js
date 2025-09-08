@@ -14,20 +14,29 @@ export const getCategories = async () => {
     }
 }
 
-const trees =[]
+// const trees =[]
 
 export const getTrees = async () => {
     try {
         const res = await fetch("https://openapi.programming-hero.com/api/plants")
         const data = await res.json()
-        trees.push(...data.plants) 
+        // trees.push(...data.plants) 
         // console.log(trees)
-        return trees
+        return data.plants
     } catch (error) {
         console.log(error)
     }
 }
 
+const categoryTrees = []
 
-getTrees()
+
+
+const trees = await getTrees()
+
+// trees.filter(tree => tree.category === "Fruit Trees")
+
+categoryTrees.push(...trees.filter(tree => tree.category === "Bamboo"))
+
+console.log(categoryTrees)
 // console.log(trees)
