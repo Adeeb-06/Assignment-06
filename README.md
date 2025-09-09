@@ -8,8 +8,7 @@ map(): Returns a new array after applying a function to each element.
 forEach(): Executes a function on each element, does not return a new array.
 filter(): Returns a new array with elements that pass a condition.
 
-3) Arrow functions in ES6
-const add = (a, b) => a + b;
+3) Arrow function is a small syntax of functions() which was introduced in ES6
 
 4) Destructuring assignment in ES6
 Extract values from arrays/objects into variables:
