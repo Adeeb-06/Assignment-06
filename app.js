@@ -40,8 +40,8 @@ function renderTrees(list) {
 
 
   document.querySelectorAll(".card1").forEach(card => {
-    card.addEventListener("click", async() => {
-       if (e.target.classList.contains("add-to-cart")) return
+    card.addEventListener("click", async(e) => {
+      if (e.target.classList.contains("add-to-cart")) return
       const id = card.getAttribute("data-id")
      await openModal(id)
     })
