@@ -10,135 +10,120 @@
 
 <body class="bg-[#F0FDF4]">
     <nav>
-        <div class="main-nav bg-[#15803D] w-full h-18 flex justify-between items-center px-20">
+        <div class="main-nav bg-[#15803D] w-full h-18 flex justify-between items-center px-3 md:px-20">
             <div class="logo">
-                <h1 class="text-white text-[22px] font-bold">Green Earth</h1>
+                <h1 class="text-white text-[14px] md:text-[22px] font-bold">Green Earth</h1>
             </div>
-            <div class="links flex gap-10 text-white">
+            <div class="links text-[12px] md:text-[16px] flex gap-3 md:gap-10 text-white">
                 <a href="#">About</a>
                 <a href="#">Gallery</a>
                 <a href="#">Plant a Tree</a>
             </div>
             <div class="btn">
-                <button class="btn1 cursor-pointer bg-[#FACC15] text-[#15803D] px-3 py-2 rounded-[30px]">Plant a Tree</button>
+                <button
+                    class="btn1 cursor-pointer bg-[#FACC15] text-[#15803D] p-[5px] md:px-3 md:py-2 rounded-[30px]">Plant
+                    a
+                    Tree</button>
             </div>
         </div>
     </nav>
     <main>
         <div class="hero bg-[#CFF0DC] w-full h-[400] gap- flex justify-between items-center p ">
-            <div class="leaf-left">
+            <div class="leaf-left md:flex hidden">
                 <img src="assets/hero-leaf1.png" alt="">
             </div>
-            <div class="main text-center flex flex-col gap-1">
-                <h1 class="text-center text-[38px] text-[#1F2937] font-bold">Plant a Tree, Grow a Future</h1>
+            <div class="main text-center p-20 flex flex-col gap-1">
+                <h1 class="text-center text-[30px] md:text-[38px] text-[#1F2937] font-bold">Plant a Tree, Grow a Future
+                </h1>
                 <p class="text-[15px] font-light">Join our mission to plant 1 million trees and make the Earth greener
                     for future
                     generations.</p>
                 <div class="btn mt-4">
-                    <button class="btn1 cursor-pointer bg-[#FACC15] text-[#15803D] font-semibold px-3 py-2 rounded-[30px]">Get
+                    <button
+                        class="btn1 cursor-pointer bg-[#FACC15] text-[#15803D] font-semibold px-3 py-2 rounded-[30px]">Get
                         Involved</button>
                 </div>
 
             </div>
-            <div class="leaf-right">
+            <div class="leaf-right md:flex hidden">
                 <img src="assets/hero-leaf2.png" alt="">
 
             </div>
         </div>
         <div class="trees h-full w-full flex flex-col mt-4  items-center  gap- px-5 ">
-            <div class="heading">
+            <div class="heading md:flex hidden">
                 <h1 class="text-[#1F2937] text-[28px] mb-4 font-bold">Choose Your Trees</h1>
             </div>
 
-            <div class="wrapper w-full h-full flex px-10 gap-5">
+            <div class="wrapper w-full h-full flex flex-col lg:flex-row px-10 gap-5">
 
-                <div class="category w-[15%] h-full">
-                    <h1 class="text-[22px] text-[#1F2937] font-bold">Category</h1>
+                <div class="category w-full  mx-auto md:mx-0 text-center md:text-left   lg:w-[15%] h-full">
+                    <h1 class="md:text-[22px] text-[28px] text-[#1F2937] font-bold">Category</h1>
 
-                    <ul id="categories" class="flex flex-col gap-4 mt-2">
-                   
+                    <ul id="categories" class="flex flex-row flex-wrap justify-center md:justify-start lg:flex-col gap-4 mt-2">
+
                     </ul>
                 </div>
-                <div id="tree-cards" class=" w-[70%] grid grid-cols-3 gap-6 items-start p-2 rounded-[10px] gap-5 ">
-           
-           
-                  
-                   
+                <div class="heading flex md:hidden text-center mx-auto">
+                    <h1 class="text-[#1F2937] text-[28px] m font-bold">Choose Your Trees</h1>
+                </div>
+
+                <div id="tree-cards"
+                    class="lg:w-[70%] w-full grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-6 p-2 rounded-[10px] items-start">
 
                 </div>
-                <div class="cart  w-[15%] h-[100vh] bg-white p-4 rounded-[10px]">
-                    <h1 class="text-[20px] text-[#1F2937] font-bold mb-4">Your Cart</h1>
-                    <div class="wrapper flex flex-col gap-3">
 
-                        <div class="card-cart bg-[#F0FDF4] p-2 rounded-[10px] flex justify-between items-center">
-                         <div class="text flex flex-col gap-1">
-                             <span class="text-[14px] text-[#1F2937] font-semibold">Mango Tree</span>
-                             <span class="text-[15px] text-[#1F2937] font-light">৳550 x 1</span>
-                         </div>
-                         <div class="btn ml-2 cursor-pointer text-[14px] text-[#1F2937] font-bold">
-                                 &#10005;
-                         </div>
-                        </div>
-                        <div class="card-cart bg-[#F0FDF4] p-2 rounded-[10px] flex justify-between items-center">
-                         <div class="text flex flex-col gap-1">
-                             <span class="text-[14px] text-[#1F2937] font-semibold">Mango Tree</span>
-                             <span class="text-[15px] text-[#1F2937] font-light">৳550 x 1</span>
-                         </div>
-                         <div class="btn ml-2 cursor-pointer text-[14px] text-[#1F2937] font-bold">
-                                 &#10005;
-                         </div>
-                        </div>
-                        <div class="card-cart bg-[#F0FDF4] p-2 rounded-[10px] flex justify-between items-center">
-                         <div class="text flex flex-col gap-1">
-                             <span class="text-[14px] text-[#1F2937] font-semibold">Mango Tree</span>
-                             <span class="text-[15px] text-[#1F2937] font-light">৳550 x 1</span>
-                         </div>
-                         <div class="btn ml-2 cursor-pointer text-[14px] text-[#1F2937] font-bold">
-                                 &#10005;
-                         </div>
-                        </div>
+                <div class="cart w-full  lg:w-[15%] lg:h-[100vh] bg-white p-4 rounded-[10px]">
+                    <h1 class="text-[20px] text-[#1F2937] font-bold mb-4">Your Cart</h1>
+                    <div id="cart-container" class="wrapper flex flex-col gap-3">
+
+
+                    </div>
+                    <div class="total mt-2 flex justify-between items-center">
+                        <span class="text-[#1F2937] text-[16px] font-bold">Total</span>
+                        <span class="text-[#1F2937] totalPrice text-[16px] font-bold"> </span>
                     </div>
 
                 </div>
             </div>
         </div>
-        <div class="about h-[80vh] w-[50%] justify-center items-center flex flex-col gap-10 mx-auto my-20">
-            <div class="heading">
-                <h1 class="text-[#1F2937] text-[28px] font-bold">About The Campaign</h1>
+        <section class="about  md:h-[80vh] mt-4 w-[90%] md:w-[50%] justify-center items-center flex flex-col gap-10 mx-auto py-20">
+            <div class="heading text-center">
+                <h1 class="text-[#1F2937] text-[28px]  md:text-[28px] font-bold">About The Campaign</h1>
             </div>
-            <div class="content flex gap-6 fle">
-                <div class="img w-[50%]">
+            <div class="content flex flex-col justify-center items-center md:flex-row gap-6 fle">
+                <div class="img md:w-[50%] w-[80%]">
                     <img class="h-full" src="assets/about.png" alt="">
                 </div>
-                <div class="contennt w-[50%] flex flex-col justify-center gap-4">
+                <div class="contennt w-[90%] md:w-[50%] md:text-[16px] text-[22px] flex flex-col justify-start gap-4">
                     <p>Green Earth is a global tree plantation initiative dedicated to fighting climate change. Since
                         our start, we've planted over 500,000 trees worldwide. By joining our campaign, you help restore
                         forests, create habitats for wildlife, and combat global warming.</p>
                     <ul class="list-disk  pl-2">
-                        <li class="list-disk  1">Restoration of natural habitats</li>
+                        <li class="list-disk">Restoration of natural habitats</li>
                         <li>Improvement of air quality</li>
                         <li>Support for local communities</li>
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="our-impact py-16 w-full h-[50vh] bg-[#CFF0DC] flex flex-col justify-center items-center gap-10 ">
+        </section>
+        <div class="our-impact py-16 w-full md:h-[50vh] bg-[#CFF0DC] flex flex-col justify-center items-center gap-10 ">
             <div class="heading">
                 <h1 class="text-[#1F2937] text-[28px] font-bold">Our Impact</h1>
             </div>
-            <div class="content w-full px-16 flex gap-6">
+            <div class="content w-full px-16 flex flex-col md:flex-row gap-6">
                 <div
-                    class="card1 rounded-[10px] text-center bg-white w-[33%] h-[110px] flex flex-col justify-center items-center">
+                    class="card1 rounded-[10px] text-center bg-white md:w-[33%] h-[110px] flex flex-col justify-center items-center">
                     <h1 class="text-[#15803D] text-[32px] font-bold">500K+</h1>
                     <span class="text-[# text-[16px] font-light">Trees Saved</span>
                 </div>
                 <div
-                    class="card1 rounded-[10px] text-center bg-white w-[33%] h-[110px] flex flex-col justify-center items-center">
+                    class="card1 rounded-[10px] text-center bg-white md:w-[33%] h-[110px] flex flex-col justify-center items-center">
                     <h1 class="text-[#15803D] text-[32px] font-bold">120+</h1>
                     <span class="text-[# text-[16px] font-light">Communities Involved</span>
                 </div>
                 <div
-                    class="card1 rounded-[10px] text-center bg-white w-[33%] h-[110px] flex flex-col justify-center items-center">
+                    class="card1 rounded-[10px] text-center bg-white md:w-[33%] h-[110px] flex flex-col justify-center items-center">
                     <h1 class="text-[#15803D] text-[32px] font-bold">30+</h1>
                     <span class="text-[# text-[16px] font-light">Countries Reached</span>
                 </div>
@@ -149,7 +134,7 @@
             <div class="headin text-white text-[28px] font-bold mb-6">
                 Plant a Tree Today
             </div>
-            <div class="form-content bg-[#15803D] w-[40%] h-[60%] flex flex-col justify-center items-center">
+            <div class="form-content bg-[#15803D] md:w-[40%] p-5 h-[60%] flex flex-col justify-center items-center">
                 <input type="text" placeholder="Your Name"
                     class="w-[90%] text-[18px]  h-[55px] rounded-md bg-white mb-4 px-3">
                 <input type="text" placeholder="Your Name"
@@ -171,6 +156,15 @@
 
         </div>
 
+        </div>
+
+        <div id="treeModal" class=" hidden fixed inset-0 bg-[#00000082]  flex justify-center items-center z-50">
+            <div class="bg-white opacity-100 w-[500px] rounded-lg p-6 relative">
+                <!-- <button id="closeModal" class="absolute top-2 right-2 text-gray-600 text-2xl m-2 font-bold">&times;</button> -->
+                <div id="modalContent">
+                    <!-- JS will inject tree details here -->
+                </div>
+            </div>
         </div>
     </main>
     <footer>
