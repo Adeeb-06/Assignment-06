@@ -169,11 +169,14 @@
     </main>
     <footer>
         <div class="footer-content bg-[#14532D] w-full h-[10vh] flex justify-center items-center">
-            <span class="text-white text-[16px]">© 2024 Green Earth. All rights reserved.</span>
+            <span class="text-white text-[16px]">© <span id="current-year"></span> Green Earth. All rights reserved.</span>
         </div>
     </footer>
 
 </body>
 <script type="module" src="app.js"></script>
+    <script>
+        document.getElementById("current-year").innerHTML = new Date().getFullYear();
+    </script>
 
 </html>
